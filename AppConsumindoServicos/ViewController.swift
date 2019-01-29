@@ -20,7 +20,6 @@ class ViewController: UIViewController {
                 
                 if erro == nil {
                     if let dadosRetorno = dados {
-                        
                         do{
                             if let objetoJson = try JSONSerialization.jsonObject(with: dadosRetorno, options: [])
                                 as? [String: Any] {
